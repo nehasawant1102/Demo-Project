@@ -11,7 +11,8 @@ public class CaseHelper{
         for(Case cs:lstcs){  
             if(cs.status == 'Open'){
             cs.Description = 'Default description';
-            cs.Origin='Phone';
+            cs.Subject = 'test subject';//dev2 chnages
+            cs.Origin='Phone';	
             cs.Reason='Instructions not clear'; 
             }    
         }
