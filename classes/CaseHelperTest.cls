@@ -16,7 +16,7 @@ private class CaseHelperTest {
         update testcs;
         lstcs.add(testcs);
         CaseHelper.setDefaultValues(lstcs);
-        Case case1= [select Description from Case where id=: testcs.id limit 1];
+        Case case1= [select Description,subject from Case where id=: testcs.id limit 1];
         System.assertEquals('Default description', case1.Description, 'When description is null, it is updated to Default description');
     	}		
 	}
